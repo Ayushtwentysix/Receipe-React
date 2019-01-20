@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import Receipe from "./Receipe";
-
+import ReceipeList from "./ReceipeList";
 class ReceipeApp extends Component {
   render() {
     return (
       <div>
-        <Receipe
-          title="boiled eggs"
-          price="12"
-          ing={["eggs", "salt", "ketchup"]}
-        />
+        {/*this.props.oneReceipe.map((r, index) => (
+          <Receipe key={index} title={r.title} time={r.time} type={r.type} />
+        ))*/}
+        <ReceipeList />
       </div>
     );
   }
